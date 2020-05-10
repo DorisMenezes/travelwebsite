@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\MVCWebsite.db.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\MVCWebsite.db.pdb
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\MVCWebsite.model.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\MVCWebsite.model.pdb
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\obj\Debug\MVCWebsite.db.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\obj\Debug\MVCWebsite.db.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\obj\Debug\MVCWebsite.db.csproj.CopyComplete
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\obj\Debug\MVCWebsite.db.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\obj\Debug\MVCWebsite.db.pdb
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\MVCWebsite.db.dll.config
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\EntityFramework.xml
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.db\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,75 @@
+﻿@model MVCWebsite.model.ClientsModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+@section css
+{
+<link rel="stylesheet" type="text/css" href="~/styles/contact.css">
+<link rel="stylesheet" type="text/css" href="~/styles/contact_responsive.css">
+
+}
+@section home
+{<div class="home">
+        <div class="background_image" style="background-image:url(../../images/contact.jpg)"></div>
+    </div>
+
+}
+<div class="col text-center">
+    <h2 class="section_title">Login</h2>
+</div>
+<div class="col-lg-12">
+    <div class="contact_form_container">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @*<h4></h4>*@
+            <hr />
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "contact_input contact_input_name inpt" } })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "contact_input contact_input_name inpt" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input class="contact_button" type="submit" value="Login" />
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+@section scripts
+{
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <script src="~/styles/bootstrap4/popper.js"></script>
+    <script src="~/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/plugins/easing/easing.js"></script>
+    <script src="~/plugins/parallax-js-master/parallax.min.js"></script>
+ 
+    <script src="~/js/contact.js"></script>
+}

@@ -1,0 +1,6 @@
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\bin\Debug\MVCWebsite.model.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\bin\Debug\MVCWebsite.model.pdb
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\obj\Debug\MVCWebsite.model.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\obj\Debug\MVCWebsite.model.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\obj\Debug\MVCWebsite.model.dll
+C:\Users\hp\source\repos\MVCWebsite\MVCWebsite.model\obj\Debug\MVCWebsite.model.pdb

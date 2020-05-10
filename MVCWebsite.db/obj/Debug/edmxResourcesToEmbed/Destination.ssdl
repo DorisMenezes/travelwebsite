@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TravelAgencyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Clients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="200" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="500" />
+    <Property Name="FirstName" Type="varchar" MaxLength="100" />
+    <Property Name="LastName" Type="varchar" MaxLength="100" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nchar" MaxLength="50" />
+    <Property Name="State" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="255" />
+    <Property Name="MessageBody" Type="nvarchar" MaxLength="500" />
+    <Property Name="EmailSent" Type="bit" />
+    <Property Name="TimeStamp" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TravelAgency.dbo.tbl_Destination' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_Destination">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsOffer" Type="bit" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="TravelAgencyModelStoreContainer">
+    <EntitySet Name="tbl_Clients" EntityType="Self.tbl_Clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Contact" EntityType="Self.tbl_Contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Destination" EntityType="Self.tbl_Destination" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_Destination].[Id] AS [Id], 
+    [tbl_Destination].[Name] AS [Name], 
+    [tbl_Destination].[Description] AS [Description], 
+    [tbl_Destination].[Price] AS [Price], 
+    [tbl_Destination].[IsOffer] AS [IsOffer], 
+    [tbl_Destination].[ImagePath] AS [ImagePath]
+    FROM [dbo].[tbl_Destination] AS [tbl_Destination]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
